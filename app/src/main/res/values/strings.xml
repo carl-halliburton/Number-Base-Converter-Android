@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Base Converter</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_refresh">Refresh</string>
+
+    <string name="editText_hint_input">Input</string>
+    <string name="editText_hint_output">Output</string>
+
+    <string name="spinner_input_prompt">Select Input Base</string>
+    <string name="spinner_output_prompt">Select Output Base</string>
+    <string-array name="bases">
+        <item>Binary</item>
+        <item>Decimal</item>
+        <item>Hexadecimal</item>
+        <item>Octal</item>
+    </string-array>
+</resources>
