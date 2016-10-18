@@ -5,10 +5,20 @@
 
     <string name="editText_hint_input">Input</string>
     <string name="editText_hint_output">Output</string>
+    <string name="btn_submit">Convert</string>
 
     <string name="spinner_input_prompt">Select Input Base</string>
     <string name="spinner_output_prompt">Select Output Base</string>
-    <string-array name="bases">
+    <string-array name="string_bases_input_array">
+        <item>Select Input Base</item>
+        <item>Binary</item>
+        <item>Decimal</item>
+        <item>Hexadecimal</item>
+        <item>Octal</item>
+    </string-array>
+
+    <string-array name="string_bases_output_array">
+        <item>Select Output Base</item>
         <item>Binary</item>
         <item>Decimal</item>
         <item>Hexadecimal</item>
