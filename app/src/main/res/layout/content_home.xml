@@ -20,152 +20,44 @@
         android:weightSum="1">
 
         <EditText
+            android:id="@+id/fieldInput"
+            android:textSize="@dimen/hint_text_size"
+            android:hint="@string/editText_hint_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
             android:gravity="top"
-            android:id="@+id/fieldInput"
-            android:focusable="false"
-            android:hint="@string/editText_hint_input"/>
+            android:focusable="false" />
 
         <EditText
+            android:id="@+id/fieldOutput"
+            android:textSize="@dimen/hint_text_size"
+            android:hint="@string/editText_hint_output"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
             android:gravity="top"
-            android:id="@+id/fieldOutput"
-            android:focusable="false"
-            android:hint="@string/editText_hint_output"/>
+            android:focusable="false" />
 
         <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/spinInput"
-            android:entries="@array/string_bases_input_array"
-            android:prompt="@string/spinner_input_prompt" />
-
-        <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight=".5" />
+
+        <Spinner
             android:id="@+id/spinOutput"
-            android:entries="@array/string_bases_output_array"
-            android:prompt="@string/spinner_output_prompt" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_submit"
             android:id="@+id/btnConvert"
-            android:layout_marginBottom="35dp"
-            android:layout_gravity="start"
-            android:typeface="serif"/>
-
-        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/GridLayout1"
+            android:text="@string/btn_submit"
+            android:textSize="@dimen/hint_text_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:columnCount="4"
-            android:rowCount="5"
-            android:orientation="horizontal"
-            tools:context=".GridXMLActivity" >
-
-            <Button
-                android:id="@+id/btnBSpace"
-                android:layout_gravity="start"
-                android:text="" />
-
-            <Button
-                android:id="@+id/btnDecimal"
-                android:layout_gravity="start"
-                android:text="." />
-
-            <Button
-                android:id="@+id/btnZero"
-                android:layout_gravity="start"
-                android:text="0" />
-
-            <Button
-                android:id="@+id/btnOne"
-                android:layout_gravity="start"
-                android:text="1" />
-
-            <Button
-                android:id="@+id/btnTwo"
-                android:layout_gravity="start"
-                android:text="2" />
-
-            <Button
-                android:id="@+id/btnThree"
-                android:layout_gravity="start"
-                android:text="3" />
-
-            <Button
-                android:id="@+id/btnFour"
-                android:layout_gravity="start"
-                android:text="4" />
-
-            <Button
-                android:id="@+id/btnFive"
-                android:layout_gravity="start"
-                android:text="5" />
-
-            <Button
-                android:id="@+id/btnSix"
-                android:layout_gravity="start"
-                android:text="6" />
-
-            <Button
-                android:id="@+id/buttonSeven"
-                android:layout_gravity="start"
-                android:text="7" />
-
-            <Button
-                android:id="@+id/buttonEight"
-                android:layout_gravity="start"
-                android:text="8" />
-
-            <Button
-                android:id="@+id/buttonNine"
-                android:layout_gravity="start"
-                android:text="9" />
-
-            <Button
-                android:id="@+id/buttonA"
-                android:layout_gravity="start"
-                android:text="8" />
-
-            <Button
-                android:id="@+id/buttonB"
-                android:layout_gravity="start"
-                android:text="B" />
-
-            <Button
-                android:id="@+id/buttonC"
-                android:layout_gravity="start"
-                android:text="C" />
-
-            <Button
-                android:id="@+id/buttonD"
-                android:layout_gravity="start"
-                android:text="D" />
-
-            <Button
-                android:id="@+id/buttonE"
-                android:layout_gravity="start"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/buttonF"
-                android:layout_gravity="start"
-                android:text="F" />
-
-            <Button
-                android:id="@+id/buttonClear"
-                android:layout_gravity="start"
-                android:text="Clear" />
-
-        </GridLayout>
-
+            android:layout_marginBottom="35dp"
+            android:layout_gravity="start" />
     </LinearLayout>
 </ScrollView>

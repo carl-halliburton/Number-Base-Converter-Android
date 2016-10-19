@@ -8,8 +8,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 public class Home extends AppCompatActivity {
+
+    private Spinner inputSpin;
+    private Spinner outputSpin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +22,18 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        inputSpin = (Spinner) findViewById(R.id.spinInput);
+        String arrIn[] = { "Input Base", "Binary", "Decimal", "Octal", "Hexadecimal"};
+        ArrayAdapter<String> adapterIn = new ArrayAdapter<>(
+                Home.this, R.layout.spinner_item, R.id.textBase,arrIn);
+        inputSpin.setAdapter(adapterIn);
+
+        outputSpin = (Spinner) findViewById(R.id.spinOutput);
+        String arrOut[] = { "output Base", "Binary", "Decimal", "Octal", "Hexadecimal"};
+        ArrayAdapter<String> adapterOut = new ArrayAdapter<>(
+                Home.this, R.layout.spinner_item, R.id.textBase,arrOut);
+        outputSpin.setAdapter(adapterOut);
     }
 
     @Override
