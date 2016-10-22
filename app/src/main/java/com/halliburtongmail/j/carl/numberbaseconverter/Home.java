@@ -1,5 +1,6 @@
 package com.halliburtongmail.j.carl.numberbaseconverter;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class Home extends AppCompatActivity {
 
@@ -30,7 +32,7 @@ public class Home extends AppCompatActivity {
         inputSpin.setAdapter(adapterIn);
 
         outputSpin = (Spinner) findViewById(R.id.spinOutput);
-        String arrOut[] = { "output Base", "Binary", "Decimal", "Octal", "Hexadecimal"};
+        String arrOut[] = { "Output Base", "Binary", "Decimal", "Octal", "Hexadecimal"};
         ArrayAdapter<String> adapterOut = new ArrayAdapter<>(
                 Home.this, R.layout.spinner_item, R.id.textBase,arrOut);
         outputSpin.setAdapter(adapterOut);
