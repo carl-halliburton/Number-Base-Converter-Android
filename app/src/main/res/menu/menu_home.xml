@@ -3,4 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.halliburtongmail.j.carl.numberbaseconverter.Home">
 
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_action_menu"
+        android:orderInCategory="3"
+        android:title="@string/menu_title"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/action_notification"
+                android:title="@string/menu_import"
+                android:icon="@drawable/ic_import_export_black"
+                android:orderInCategory="2"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_video_gallery"
+                android:title="@string/menu_export"
+                android:icon="@drawable/ic_import_export_black"
+                android:orderInCategory="3"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_feedback"
+                android:title="@string/menu_about"
+                android:icon="@drawable/ic_info_black"
+                android:orderInCategory="4"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
 </menu>

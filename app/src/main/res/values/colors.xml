@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3399ff</color>
+    <color name="colorBody">#99ccff</color>
     <color name="colorPrimaryDark">#000066</color>
     <color name="colorAccent">#4da6ff</color>
     <color name="text_view_background_color">#ffffff</color>
+    <color name="editText_background_color">#ffffff</color>
+    <color name="spinner_background_color">#ffffff</color>
+    <color name="toolbar_title_color">#000000</color>
     <color name="borders">#000000</color>
 </resources>

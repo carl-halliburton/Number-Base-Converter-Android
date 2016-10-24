@@ -11,7 +11,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.halliburtongmail.j.carl.numberbaseconverter.Home"
-    tools:showIn="@layout/activity_home">
+    tools:showIn="@layout/activity_home"
+    android:background="@color/colorBody">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -26,7 +27,7 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:gravity="top"
-            android:focusable="true" />
+            android:focusable="true"/>
 
         <EditText
             android:id="@+id/fieldOutput"
@@ -36,7 +37,7 @@
             android:layout_height="wrap_content"
             android:inputType="text"
             android:gravity="top"
-            android:focusable="true" />
+            android:focusable="true"/>
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -46,13 +47,13 @@
                 android:id="@+id/spinInput"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"/>
 
             <Spinner
                 android:id="@+id/spinOutput"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"/>
          </LinearLayout>
 
         <Button
@@ -66,11 +67,13 @@
 
         <TextView
             android:id="@+id/textView1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minLines = "6"
-            android:text="Results"
+            android:text="@string/title_results_textview"
+            android:textSize="@dimen/hint_text_size"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
             android:background="@drawable/border_output_view" />
-
     </LinearLayout>
 </ScrollView>

@@ -6,4 +6,10 @@
     <string name="editText_hint_input">Input</string>
     <string name="editText_hint_output">Output</string>
     <string name="btn_submit">Convert</string>
+    <string name="title_results_textview">Results</string>
+
+    <string name="menu_title">Menu</string>
+    <string name="menu_import">Import</string>
+    <string name="menu_export">Export</string>
+    <string name="menu_about">About</string>
 </resources>
