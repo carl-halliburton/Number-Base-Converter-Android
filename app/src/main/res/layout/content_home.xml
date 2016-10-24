@@ -29,19 +29,10 @@
             android:gravity="top"
             android:focusable="true"/>
 
-        <EditText
-            android:id="@+id/fieldOutput"
-            android:textSize="@dimen/hint_text_size"
-            android:hint="@string/editText_hint_output"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:gravity="top"
-            android:focusable="true"/>
-
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
 
             <Spinner
                 android:id="@+id/spinInput"
@@ -73,7 +64,7 @@
             android:text="@string/title_results_textview"
             android:textSize="@dimen/hint_text_size"
             android:textStyle="bold"
-            android:paddingLeft="5dp"
+            android:paddingLeft="20dp"
             android:background="@drawable/border_output_view" />
     </LinearLayout>
 </ScrollView>
