@@ -24,9 +24,9 @@
             android:hint="@string/editText_hint_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
+            android:inputType="number"
             android:gravity="top"
-            android:focusable="false" />
+            android:focusable="true" />
 
         <EditText
             android:id="@+id/fieldOutput"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:inputType="text"
             android:gravity="top"
-            android:focusable="false" />
+            android:focusable="true" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -60,71 +60,17 @@
             android:text="@string/btn_submit"
             android:textSize="@dimen/hint_text_size"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_gravity="start" />
 
-        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/GridLayout1"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:columnCount="4"
-            android:rowCount="6"
-            android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:textStyle="bold"
-            tools:context=".GridXMLActivity" >
+            android:minLines = "6"
+            android:text="Results"
+            android:background="@drawable/border_output_view" />
 
-            <ImageButton
-                android:id="@+id/btnBSpace"
-                android:layout_width="wrap_content"
-                android:layout_gravity="start"
-                android:scaleType="fitStart"
-                android:src="@drawable/ic_backspace_black" />
-
-            <ImageButton
-                android:id="@+id/btnDecimal"
-                android:layout_width="wrap_content"
-                android:layout_gravity="start"
-                android:scaleType="fitStart"
-                android:src="@drawable/ic_action_decimal" />
-
-            <ImageButton
-                android:id="@+id/btnZero"
-                android:layout_width="wrap_content"
-                android:layout_gravity="start"
-                android:scaleType="fitStart"
-                android:src="@drawable/ic_action_zero" />
-
-            <ImageButton
-                android:id="@+id/btnOne"
-                android:layout_width="wrap_content"
-                android:layout_gravity="start"
-                android:scaleType="fitStart"
-                android:src="@drawable/ic_action_one" />
-
-            <ImageButton
-                android:id="@+id/btnTwo"
-                android:layout_width="wrap_content"
-                android:layout_gravity="start"
-                android:scaleType="fitStart"
-                android:src="@drawable/ic_action_two" />
-
-            <ImageButton
-                android:id="@+id/btnThree"
-                android:layout_width="wrap_content"
-                android:layout_gravity="start"
-                android:scaleType="fitStart"
-                android:src="@drawable/ic_action_three" />
-
-            <ImageButton
-                android:id="@+id/btnFour"
-                android:layout_width="wrap_content"
-                android:layout_gravity="start"
-                android:scaleType="fitStart"
-                android:src="@drawable/ic_action_four" />
-
-        </GridLayout>
     </LinearLayout>
 </ScrollView>
